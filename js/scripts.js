@@ -8,15 +8,14 @@ $(document).ready(function(){
     console.log(cloudCityAnswer, hothAnswer, deathStarAnswer);
 
     if ((deathStarAnswer === "vader" && hothAnswer === "vader" && cloudCityAnswer === "vader") || (deathStarAnswer === "vader" && hothAnswer === "vader") || (deathStarAnswer === "vader" && cloudCityAnswer === "vader") || (cloudCityAnswer === "vader" && hothAnswer === "vader")) {
-      console.log("vader");
+      $("#result").append('<img src="img/vader.jpeg">');
+    } else if ((deathStarAnswer === "han" && hothAnswer === "han" && cloudCityAnswer === "han") || (deathStarAnswer === "han" && hothAnswer === "han") || (deathStarAnswer === "han" && cloudCityAnswer === "han") || (cloudCityAnswer === "han" && hothAnswer === "han")) {
+      $("#result").append('<img src="img/han.jpg">');
+    } else if ((deathStarAnswer === "chewie" && hothAnswer === "chewie" && cloudCityAnswer === "chewie") || (deathStarAnswer === "chewie" && hothAnswer === "chewie") || (deathStarAnswer === "chewie" && cloudCityAnswer === "chewie") || (cloudCityAnswer === "chewie" && hothAnswer === "chewie")) {
+      $("#result").append('<img src="img/chewie.jpg">');
+    } else {
+      $("#result").append('<p>Please try again.</p>');
     }
-    // if (gender === "female" && profession === "musician") {
-    //   $("#result").append('<img src="img/beyonce.jpeg">');
-    // } else if (gender === "female" && profession === "actor") {
-    //   $("#result").append('<img src="img/daisy.jpg">');
-    // } else if (gender === "female" && profession === "athlete") {
-    //   $("#result").append('<img src="img/serena.jpg">');
-    // } else
 
     event.preventDefault();
   });
