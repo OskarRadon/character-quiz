@@ -7,7 +7,7 @@ $(document).ready(function(){
     var cloudCityAnswer = $("input[name=cloudCity]:checked").val();
     console.log(cloudCityAnswer, hothAnswer, deathStarAnswer);
 
-    if ((deathStarAnswer === "vader" && hothAnswer === "vader" && cloudCityAnswer === "vader") || (deathStarAnswer === "vader" && hothAnswer === "vader") || (deathStarAnswer === "vader" && cloudCityAnswer === "vader") || (cloudCityAnswer === "vader" && hothAnswer === "vader")) {
+    if ((deathStarAnswer, hothAnswer, cloudCityAnswer) || (deathStarAnswer, hothAnswer) || (deathStarAnswer, cloudCityAnswer) || (cloudCityAnswer, hothAnswer) === "vader") {
       $("#result").append('<img src="img/vader.jpeg">');
     } else if ((deathStarAnswer === "han" && hothAnswer === "han" && cloudCityAnswer === "han") || (deathStarAnswer === "han" && hothAnswer === "han") || (deathStarAnswer === "han" && cloudCityAnswer === "han") || (cloudCityAnswer === "han" && hothAnswer === "han")) {
       $("#result").append('<img src="img/han.jpg">');
